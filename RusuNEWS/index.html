@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notizie del Dude</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-secondary">
+        <img src="Immagini/73925f11ce688f0186812fb40641e764_w200.gif" alt="GIF Trasparente" class="gif-image">
+        <div class="container">
+            <h1 class="text-center">Notizie del Dude</h1>
+        </div>
+    </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Notizie</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="SavedNews.html">Notizie Salvate</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="form-group">
+            </div>
+        </div>
+        <div class="col-md-4 offset-md-4">
+            <!-- Bottone "Mostra Notizie" centrato -->
+            <button class="btn btn-lg btn-success btn-block" id="searchButton" onclick="search()">Mostra Notizie</button>
+            <p id="requestsLeft" class="text-center mt-2">Richieste rimaste: 100</p> <!-- Visualizza il numero di richieste rimaste qui -->
+        </div>
+    </div>
+    <div id="newsResults" class="row mt-4"></div>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
